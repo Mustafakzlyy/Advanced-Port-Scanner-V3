@@ -52,10 +52,10 @@ Hedef IP (Orn: 8.8.8.8): 192.168.1.1                                      Bu ara
 [+] DOGRULANMIS PORT: 80 (HTTP Web)
 [+] DOGRULANMIS PORT: 443 (HTTPS Güvenli Web)
                                                                
-=============================                                    
+                                
 ANALIZ TAMAMLANDI.                                                    
 Gerçek Açık Port Sayısı: 3                                             
-=============================
+
 
 ### Çalıştırma
 Projeyi klonladıktan sonra ana klasörde terminali açın ve şu komutu çalıştırın:
