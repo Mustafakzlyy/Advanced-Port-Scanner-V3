@@ -21,13 +21,6 @@ Geleneksel tarayıcılar sadece bağlantı kurulup kurulmadığına bakar. Bu ar
 ### Gereksinimler
 * Java 25 veya üzeri sürüm.
 
-### Çalıştırma
-Projeyi klonladıktan sonra ana klasörde terminali açın ve şu komutu çalıştırın:
-
-```bash
-**java src/PortScanner.java**
-
-
 🔍 Geliştirme Sürecinde Karşılaşılan Zorluklar ve Çözümler
 -----------------------------------------------------------------
 Bu projenin geliştirilmesi sırasında, siber güvenlik araçlarının gerçek dünyada karşılaştığı bazı tipik engellerle karşılaşıldı ve bu durumlar teknik çözümlerle aşıldı:
@@ -57,9 +50,14 @@ Hedef IP (Orn: 8.8.8.8): 192.168.1.1                                      Bu ara
 >>> 192.168.1.1 icin derin analiz yapiliyor...                                               kulanıcıya aittir.
 [+] DOGRULANMIS PORT: 53 (DNS Servisi)
 [+] DOGRULANMIS PORT: 80 (HTTP Web)
-[+] DOGRULANMIS PORT: 443 (HTTPS Güvenli Web)
+[+] DOGRULANMIS PORT: 443 (HTTPS Güvenli Web)                                                                      
+-------------------------------                                        
+ANALIZ TAMAMLANDI.                                                    
+Gerçek Açık Port Sayısı: 3                                             
+-------------------------------
 
--------------------------------
-ANALIZ TAMAMLANDI.
-Gerçek Açık Port Sayısı: 3
--------------------------------
+### Çalıştırma
+Projeyi klonladıktan sonra ana klasörde terminali açın ve şu komutu çalıştırın:
+
+```bash
+java src/PortScanner.java
