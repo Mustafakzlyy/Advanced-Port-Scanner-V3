@@ -39,13 +39,12 @@ Hata: Terminal üzerinden çalıştırırken Java'nın dosya yollarını ve pake
 Hata: Çok hızlı taramalarda (100+ thread) ağın tıkanması, paket kayıpları veya hedef sistemin koruma mekanizmalarına takılarak yanlış sonuçlar alınması.
 
 Çözüm: ExecutorService thread havuzu 100'den 15-20 seviyelerine çekilerek daha "hassas" bir tarama sağlandı. Port başına bekleme süresi (Timeout) 500ms'den 2000ms'ye çıkarılarak kararlı sonuçlar elde edildi.
-
                                                                                                                                                                        
   GELISMIS PORT ANALIZI (V3)                                                             
 
 Hedef IP (Orn: 8.8.8.8): 192.168.1.1                                      
                                                                      
->>> 192.168.1.1 icin derin analiz yapiliyor...                                               
+ 192.168.1.1 icin derin analiz yapiliyor...                                               
 [+] DOGRULANMIS PORT: 53 (DNS Servisi)
 [+] DOGRULANMIS PORT: 80 (HTTP Web)
 [+] DOGRULANMIS PORT: 443 (HTTPS Güvenli Web)
