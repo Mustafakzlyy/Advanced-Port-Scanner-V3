@@ -16,13 +16,11 @@ Geleneksel tarayıcılar sadece bağlantı kurulup kurulmadığına bakar. Bu ar
 2. Bağlantı kurulsa bile, içeriye **1-byte test verisi** gönderir.
 3. Eğer veri gönderimi başarılıysa portu **"DOĞRULANMIŞ"** olarak işaretler. Bu sayede "False Positive" sonuçları %100'e yakın oranda engeller.
 
-## 💻 Kurulum ve Çalıştırma
------------------------------
+**## 💻 Kurulum ve Çalıştırma**
 ### Gereksinimler
 * Java 25 veya üzeri sürüm.
 
-🔍 Geliştirme Sürecinde Karşılaşılan Zorluklar ve Çözümler
------------------------------------------------------------------
+**🔍 Geliştirme Sürecinde Karşılaşılan Zorluklar ve Çözümler**
 Bu projenin geliştirilmesi sırasında, siber güvenlik araçlarının gerçek dünyada karşılaştığı bazı tipik engellerle karşılaşıldı ve bu durumlar teknik çözümlerle aşıldı:
 
 1. "Ghost Ports" (Hayalet Portlar) Sorunu
@@ -36,7 +34,7 @@ Neden: ISP (İnternet Servis Sağlayıcı) ve güvenlik duvarlarının, port tar
 Hata: Terminal üzerinden çalıştırırken Java'nın dosya yollarını ve paket yapısını yanlış algılaması sonucu programın başlatılamaması.
 
 Çözüm: Java 25 (LTS) sürümünün "Single-File Source Code" özelliği kullanılarak, derleme (javac) işlemine gerek kalmadan java src/Tarayici.java komutuyla doğrudan kaynak kod üzerinden çalıştırma yöntemi optimize edildi.
-0000000000
+
 3. Zaman Aşımı (Timeout) ve Hız Dengesi
 Hata: Çok hızlı taramalarda (100+ thread) ağın tıkanması, paket kayıpları veya hedef sistemin koruma mekanizmalarına takılarak yanlış sonuçlar alınması.
 
@@ -51,11 +49,9 @@ Hedef IP (Orn: 8.8.8.8): 192.168.1.1                                      Bu ara
 [+] DOGRULANMIS PORT: 53 (DNS Servisi)
 [+] DOGRULANMIS PORT: 80 (HTTP Web)
 [+] DOGRULANMIS PORT: 443 (HTTPS Güvenli Web)
-                                                               
-                                
+                                                                                
 ANALIZ TAMAMLANDI.                                                    
 Gerçek Açık Port Sayısı: 3                                             
-
 
 ### Çalıştırma
 Projeyi klonladıktan sonra ana klasörde terminali açın ve şu komutu çalıştırın:
